@@ -17,21 +17,19 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleAspectFit" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="beY-hG-OFL">
-                                <rect key="frame" x="100" y="338" width="214" height="274"/>
+                                <rect key="frame" x="100" y="488" width="214" height="274"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NUz-4O-MGp">
-                                        <rect key="frame" x="0.0" y="0.0" width="214" height="84.5"/>
-                                        <state key="normal" title="How does this app work?"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xYq-sA-82e">
+                                        <rect key="frame" x="0.0" y="0.0" width="214" height="132"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <state key="normal" title="upload new x-ray"/>
                                         <connections>
-                                            <segue destination="LZa-nM-6gW" kind="show" id="fUH-Lf-hGe"/>
+                                            <segue destination="0cG-qP-zw0" kind="show" id="m1a-tO-f1C"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xYq-sA-82e">
-                                        <rect key="frame" x="0.0" y="94.5" width="214" height="85"/>
-                                        <state key="normal" title="upload new x-ray"/>
-                                    </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zgp-dn-QbZ">
-                                        <rect key="frame" x="0.0" y="189.5" width="214" height="84.5"/>
+                                        <rect key="frame" x="0.0" y="142" width="214" height="132"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <state key="normal" title="view previous uploads">
                                             <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="medium"/>
                                         </state>
@@ -41,12 +39,37 @@
                                     </button>
                                 </subviews>
                             </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GG5-Xz-p64">
+                                <rect key="frame" x="75" y="134" width="264" height="339"/>
+                                <string key="text">Upload your Radiology results below to gett a fast, easy, inexpensige second opinion.
+ We use AI to analyze your x-ray a provide a computer generated analysis. 
+You can also review your previously uploaded results.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="X-ray Analytics" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wKd-Uu-ViM">
+                                <rect key="frame" x="10" y="98" width="394" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="3Ff-4j-X7S"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="beY-hG-OFL" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="250" id="GA3-BB-Tly"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="beY-hG-OFL" secondAttribute="bottom" constant="250" id="j6L-Pc-8S0"/>
+                            <constraint firstItem="GG5-Xz-p64" firstAttribute="top" secondItem="wKd-Uu-ViM" secondAttribute="bottom" constant="15" id="Cox-UU-Ney"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="GG5-Xz-p64" secondAttribute="trailing" constant="75" id="FpG-OZ-RvZ"/>
+                            <constraint firstItem="beY-hG-OFL" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="400" id="GA3-BB-Tly"/>
+                            <constraint firstItem="wKd-Uu-ViM" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="10" id="MeF-km-rqJ"/>
+                            <constraint firstItem="wKd-Uu-ViM" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="Ujw-sX-Ckr"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="wKd-Uu-ViM" secondAttribute="trailing" constant="10" id="Wev-vP-h6G"/>
+                            <constraint firstItem="GG5-Xz-p64" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="75" id="Zcb-uQ-Yai"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="beY-hG-OFL" secondAttribute="bottom" constant="100" id="j6L-Pc-8S0"/>
+                            <constraint firstItem="beY-hG-OFL" firstAttribute="top" secondItem="GG5-Xz-p64" secondAttribute="bottom" constant="15" id="lHd-4w-2cT"/>
                             <constraint firstItem="beY-hG-OFL" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="100" id="t2Q-jb-Wxe"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="beY-hG-OFL" secondAttribute="trailing" constant="100" id="vry-Qy-MDw"/>
                         </constraints>
@@ -55,18 +78,18 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2823.1884057971015" y="29.464285714285712"/>
+            <point key="canvasLocation" x="2673.913043478261" y="20.758928571428569"/>
         </scene>
-        <!--Table View Controller-->
+        <!--Prev Uploads Table View Controller-->
         <scene sceneID="kpO-eM-B8f">
             <objects>
-                <tableViewController id="qyw-1Z-9hF" sceneMemberID="viewController">
+                <tableViewController id="qyw-1Z-9hF" customClass="PrevUploadsTableViewController" customModule="X_ray_Analysis" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="wug-OS-w2A">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="Vfv-Ul-EeJ">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="myIdentifier" id="Vfv-Ul-EeJ">
                                 <rect key="frame" x="0.0" y="28" width="414" height="43.5"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Vfv-Ul-EeJ" id="em3-GY-MnM">
@@ -84,23 +107,23 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XjG-JH-i0S" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3712" y="607"/>
+            <point key="canvasLocation" x="3593" y="611"/>
         </scene>
         <!--View Controller-->
-        <scene sceneID="ozE-mF-Et4">
+        <scene sceneID="AHO-Rs-6YJ">
             <objects>
-                <viewController id="LZa-nM-6gW" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="11L-RS-Txc">
+                <viewController id="0cG-qP-zw0" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="OAO-bL-SAk">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <viewLayoutGuide key="safeArea" id="aeM-FP-X2Q"/>
+                        <viewLayoutGuide key="safeArea" id="MSM-sn-2Yu"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <navigationItem key="navigationItem" id="N11-QX-fBz"/>
+                    <navigationItem key="navigationItem" id="a40-iE-wtk"/>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="GyU-8O-B5p" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LrM-rt-JPa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3651" y="-123"/>
+            <point key="canvasLocation" x="3533" y="-218"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="5lb-R9-syR">
