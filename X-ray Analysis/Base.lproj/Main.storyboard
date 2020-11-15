@@ -48,7 +48,7 @@ You can also review your previously uploaded results.</string>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="X-ray Analytics" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wKd-Uu-ViM">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="X-plain My X-ray" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wKd-Uu-ViM">
                                 <rect key="frame" x="10" y="98" width="394" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="21" id="3Ff-4j-X7S"/>
@@ -107,7 +107,23 @@ You can also review your previously uploaded results.</string>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XjG-JH-i0S" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3593" y="611"/>
+            <point key="canvasLocation" x="3593" y="502"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="h4E-vU-FwA">
+            <objects>
+                <viewController id="ZY7-qU-Uok" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="zDT-60-DPe">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="QQh-08-iuu"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="9nP-Ou-e2a"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eCB-Ka-a4f" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4472" y="285"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="AHO-Rs-6YJ">
@@ -116,14 +132,56 @@ You can also review your previously uploaded results.</string>
                     <view key="view" contentMode="scaleToFill" id="OAO-bL-SAk">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UiX-H5-1Sx">
+                                <rect key="frame" x="10" y="579" width="394" height="33"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal" title="Select a photo from Camera Roll"/>
+                                <connections>
+                                    <segue destination="ZY7-qU-Uok" kind="show" id="Cyg-O3-15J"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rk4-yJ-fV4">
+                                <rect key="frame" x="10" y="338" width="394" height="30"/>
+                                <state key="normal" title="Take a picture"/>
+                                <connections>
+                                    <segue destination="eix-60-RLn" kind="show" id="oEf-Hi-m3X"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="MSM-sn-2Yu"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="MSM-sn-2Yu" firstAttribute="trailing" secondItem="UiX-H5-1Sx" secondAttribute="trailing" constant="10" id="DsI-6c-yQQ"/>
+                            <constraint firstItem="UiX-H5-1Sx" firstAttribute="top" relation="greaterThanOrEqual" secondItem="Rk4-yJ-fV4" secondAttribute="bottom" constant="100" id="H8v-hi-0F9"/>
+                            <constraint firstItem="Rk4-yJ-fV4" firstAttribute="top" secondItem="MSM-sn-2Yu" secondAttribute="top" constant="250" id="Hlt-d7-Lxc"/>
+                            <constraint firstItem="MSM-sn-2Yu" firstAttribute="bottom" secondItem="UiX-H5-1Sx" secondAttribute="bottom" constant="250" id="MH0-gt-Dwc"/>
+                            <constraint firstItem="MSM-sn-2Yu" firstAttribute="trailing" secondItem="Rk4-yJ-fV4" secondAttribute="trailing" constant="10" id="OWk-lr-1cq"/>
+                            <constraint firstItem="Rk4-yJ-fV4" firstAttribute="leading" secondItem="MSM-sn-2Yu" secondAttribute="leading" constant="10" id="Q36-pM-hWY"/>
+                            <constraint firstItem="UiX-H5-1Sx" firstAttribute="leading" secondItem="MSM-sn-2Yu" secondAttribute="leading" constant="10" id="vnJ-R3-zwo"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="a40-iE-wtk"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LrM-rt-JPa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3533" y="-218"/>
+            <point key="canvasLocation" x="3592.753623188406" y="-291.29464285714283"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="2Fx-s0-xd6">
+            <objects>
+                <viewController id="eix-60-RLn" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="SIN-QI-Y70">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="zVp-hT-hyG"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="0uM-2h-P7j"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qiz-3L-5ue" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4439" y="-456"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="5lb-R9-syR">
