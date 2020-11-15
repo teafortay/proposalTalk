@@ -28,7 +28,7 @@ class PrevUploadsTableViewController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 20
+        return 2
     }
 
     
@@ -36,7 +36,13 @@ class PrevUploadsTableViewController: UITableViewController {
         let cell = tableView.dequeueReusableCell(withIdentifier: "myIdentifier", for: indexPath)
 
         // Configure the cell...
-        cell.textLabel?.text = "Cell "+String(indexPath.row)
+        if indexPath.row == 0 {
+            cell.textLabel?.text = "Results uploaded at 8:36 today"
+        }
+        if indexPath.row == 1 {
+            cell.textLabel?.text = "Results uploaded Oct. 29, 2020"
+        }
+//        cell.textLabel?.text = "Cell "+String(indexPath.row)
         return cell
     }
     
