@@ -169,7 +169,7 @@ You can also review your previously uploaded results.</string>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="50" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gfd-rb-1Bb">
-                                <rect key="frame" x="30" y="598" width="354" height="164"/>
+                                <rect key="frame" x="30" y="568" width="354" height="244"/>
                                 <string key="text">These findings are suspicious for aspiration pneumonia given the clinical history. Left lung is relatively clear. there is a right ij central venous line with distal lead tip in the distal svc. cardiac silhouette is within normal limits.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -181,10 +181,10 @@ You can also review your previously uploaded results.</string>
                         <constraints>
                             <constraint firstItem="om3-Ib-YDo" firstAttribute="trailing" secondItem="y2i-Qf-w2i" secondAttribute="trailing" constant="50" id="C1S-gN-ROH"/>
                             <constraint firstItem="y2i-Qf-w2i" firstAttribute="top" secondItem="om3-Ib-YDo" secondAttribute="top" constant="50" id="Lzt-Cq-b7B"/>
-                            <constraint firstItem="om3-Ib-YDo" firstAttribute="bottom" secondItem="Gfd-rb-1Bb" secondAttribute="bottom" constant="100" id="OOy-qx-DOp"/>
+                            <constraint firstItem="om3-Ib-YDo" firstAttribute="bottom" secondItem="Gfd-rb-1Bb" secondAttribute="bottom" constant="50" id="OOy-qx-DOp"/>
                             <constraint firstItem="om3-Ib-YDo" firstAttribute="trailing" secondItem="Gfd-rb-1Bb" secondAttribute="trailing" constant="30" id="PHs-Gv-2xc"/>
                             <constraint firstItem="y2i-Qf-w2i" firstAttribute="leading" secondItem="om3-Ib-YDo" secondAttribute="leading" constant="50" id="SUh-7F-eIA"/>
-                            <constraint firstItem="Gfd-rb-1Bb" firstAttribute="top" secondItem="y2i-Qf-w2i" secondAttribute="bottom" constant="60" id="c9o-nB-8U6"/>
+                            <constraint firstItem="Gfd-rb-1Bb" firstAttribute="top" secondItem="y2i-Qf-w2i" secondAttribute="bottom" constant="30" id="c9o-nB-8U6"/>
                             <constraint firstItem="Gfd-rb-1Bb" firstAttribute="leading" secondItem="om3-Ib-YDo" secondAttribute="leading" constant="30" id="tfz-ae-Na2"/>
                         </constraints>
                     </view>
