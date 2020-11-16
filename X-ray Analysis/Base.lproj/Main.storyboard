@@ -96,6 +96,9 @@ You can also review your previously uploaded results.</string>
                                     <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="Htq-V3-O5j" kind="show" id="jL4-yt-BdS"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -110,20 +113,45 @@ You can also review your previously uploaded results.</string>
             <point key="canvasLocation" x="3593" y="502"/>
         </scene>
         <!--View Controller-->
-        <scene sceneID="h4E-vU-FwA">
+        <scene sceneID="cKj-ZA-pUW">
             <objects>
-                <viewController id="ZY7-qU-Uok" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="zDT-60-DPe">
+                <viewController id="Htq-V3-O5j" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="lUL-EQ-iRt">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <viewLayoutGuide key="safeArea" id="QQh-08-iuu"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="xray2" translatesAutoresizingMaskIntoConstraints="NO" id="y2i-Qf-w2i">
+                                <rect key="frame" x="50" y="138" width="314" height="400"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="400" id="Bcf-Ou-DI9"/>
+                                    <constraint firstAttribute="height" constant="400" id="K5H-ud-ciQ"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="50" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gfd-rb-1Bb">
+                                <rect key="frame" x="30" y="598" width="354" height="164"/>
+                                <string key="text">These findings are suspicious for aspiration pneumonia given the clinical history. Left lung is relatively clear. there is a right ij central venous line with distal lead tip in the distal svc. cardiac silhouette is within normal limits.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="om3-Ib-YDo"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="om3-Ib-YDo" firstAttribute="trailing" secondItem="y2i-Qf-w2i" secondAttribute="trailing" constant="50" id="C1S-gN-ROH"/>
+                            <constraint firstItem="y2i-Qf-w2i" firstAttribute="top" secondItem="om3-Ib-YDo" secondAttribute="top" constant="50" id="Lzt-Cq-b7B"/>
+                            <constraint firstItem="om3-Ib-YDo" firstAttribute="bottom" secondItem="Gfd-rb-1Bb" secondAttribute="bottom" constant="100" id="OOy-qx-DOp"/>
+                            <constraint firstItem="om3-Ib-YDo" firstAttribute="trailing" secondItem="Gfd-rb-1Bb" secondAttribute="trailing" constant="30" id="PHs-Gv-2xc"/>
+                            <constraint firstItem="y2i-Qf-w2i" firstAttribute="leading" secondItem="om3-Ib-YDo" secondAttribute="leading" constant="50" id="SUh-7F-eIA"/>
+                            <constraint firstItem="Gfd-rb-1Bb" firstAttribute="top" secondItem="y2i-Qf-w2i" secondAttribute="bottom" constant="60" id="c9o-nB-8U6"/>
+                            <constraint firstItem="Gfd-rb-1Bb" firstAttribute="leading" secondItem="om3-Ib-YDo" secondAttribute="leading" constant="30" id="tfz-ae-Na2"/>
+                        </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="9nP-Ou-e2a"/>
+                    <navigationItem key="navigationItem" id="Vii-h1-FCh"/>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="eCB-Ka-a4f" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="P1O-dZ-XkN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4472" y="285"/>
+            <point key="canvasLocation" x="4493" y="502"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="AHO-Rs-6YJ">
@@ -138,7 +166,7 @@ You can also review your previously uploaded results.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <state key="normal" title="Select a photo from Camera Roll"/>
                                 <connections>
-                                    <segue destination="ZY7-qU-Uok" kind="show" id="Cyg-O3-15J"/>
+                                    <segue destination="eix-60-RLn" kind="show" id="WdW-mY-aB2"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rk4-yJ-fV4">
@@ -174,14 +202,77 @@ You can also review your previously uploaded results.</string>
                     <view key="view" contentMode="scaleToFill" id="SIN-QI-Y70">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="xray1" translatesAutoresizingMaskIntoConstraints="NO" id="Gnz-zL-995">
+                                <rect key="frame" x="50" y="138" width="314" height="400"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="400" id="KYB-uF-9bf"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Cs-QN-fuy">
+                                <rect key="frame" x="10" y="648" width="394" height="30"/>
+                                <state key="normal" title="Analyze"/>
+                                <connections>
+                                    <segue destination="JJ6-2w-qVs" kind="show" id="aMA-CT-zxK"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="zVp-hT-hyG"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="2Cs-QN-fuy" firstAttribute="top" secondItem="Gnz-zL-995" secondAttribute="bottom" constant="110" id="1nN-OU-3Kd"/>
+                            <constraint firstItem="2Cs-QN-fuy" firstAttribute="leading" secondItem="zVp-hT-hyG" secondAttribute="leading" constant="10" id="4TS-7v-uoN"/>
+                            <constraint firstItem="zVp-hT-hyG" firstAttribute="trailing" secondItem="Gnz-zL-995" secondAttribute="trailing" constant="50" id="5c2-aJ-B2e"/>
+                            <constraint firstItem="zVp-hT-hyG" firstAttribute="trailing" secondItem="2Cs-QN-fuy" secondAttribute="trailing" constant="10" id="9Ly-HA-oiy"/>
+                            <constraint firstItem="Gnz-zL-995" firstAttribute="top" secondItem="zVp-hT-hyG" secondAttribute="top" constant="50" id="B8B-dn-Vdd"/>
+                            <constraint firstItem="zVp-hT-hyG" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="2Cs-QN-fuy" secondAttribute="bottom" constant="100" id="NPp-by-E5d"/>
+                            <constraint firstItem="Gnz-zL-995" firstAttribute="leading" secondItem="zVp-hT-hyG" secondAttribute="leading" constant="50" id="OwS-XJ-3Dj"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="0uM-2h-P7j"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qiz-3L-5ue" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4439" y="-456"/>
+            <point key="canvasLocation" x="4391" y="-291"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="AmL-RL-7c3">
+            <objects>
+                <viewController id="JJ6-2w-qVs" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="pFt-K2-bhy">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="50" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Fh-BU-z6L">
+                                <rect key="frame" x="30" y="690" width="354" height="122"/>
+                                <string key="text">The lungs are well-expanded and clear, noting chronic elevation of the right hemidiaphragm. no pleural abnormality. Heart size is normal. Cardiomediastinal hilar silhouettes are unremarkable. Median sternotomy wires are midline and intact.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="xray1" translatesAutoresizingMaskIntoConstraints="NO" id="KPL-ch-fkO">
+                                <rect key="frame" x="50" y="138" width="314" height="400"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="400" id="91q-eP-8Uq"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="9nT-jJ-CL9"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="9nT-jJ-CL9" firstAttribute="trailing" secondItem="4Fh-BU-z6L" secondAttribute="trailing" constant="30" id="2IA-RB-rYM"/>
+                            <constraint firstItem="9nT-jJ-CL9" firstAttribute="trailing" secondItem="KPL-ch-fkO" secondAttribute="trailing" constant="50" id="58d-5P-8AG"/>
+                            <constraint firstItem="KPL-ch-fkO" firstAttribute="top" secondItem="9nT-jJ-CL9" secondAttribute="top" constant="50" id="GYq-dd-9Y6"/>
+                            <constraint firstItem="9nT-jJ-CL9" firstAttribute="bottom" secondItem="4Fh-BU-z6L" secondAttribute="bottom" constant="50" id="bjt-b4-7sz"/>
+                            <constraint firstItem="KPL-ch-fkO" firstAttribute="leading" secondItem="9nT-jJ-CL9" secondAttribute="leading" constant="50" id="f0A-OA-Vwq"/>
+                            <constraint firstItem="4Fh-BU-z6L" firstAttribute="leading" secondItem="9nT-jJ-CL9" secondAttribute="leading" constant="30" id="iby-w1-6tt"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="YkD-ko-5hT"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xn4-WR-1GI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5226" y="-291"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="5lb-R9-syR">
@@ -202,7 +293,12 @@ You can also review your previously uploaded results.</string>
             <point key="canvasLocation" x="1913.0434782608697" y="29.464285714285712"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="WdW-mY-aB2"/>
+    </inferredMetricsTieBreakers>
     <resources>
+        <image name="xray1" width="253.5" height="252"/>
+        <image name="xray2" width="253.5" height="252"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
