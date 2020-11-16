@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="3BP-VO-MuT">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="cgz-ws-TE2">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
@@ -17,7 +17,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z2g-bC-aQw">
-                                <rect key="frame" x="75" y="144" width="264" height="203"/>
+                                <rect key="frame" x="75" y="188" width="264" height="203"/>
                                 <string key="text">Upload your Radiology results below to gett a fast, easy, inexpensige second opinion.
  We use AI to analyze your x-ray a provide a computer generated analysis. 
 You can also review your previously uploaded results.</string>
@@ -56,17 +56,18 @@ You can also review your previously uploaded results.</string>
                             <constraint firstItem="S8M-9h-uxR" firstAttribute="leading" secondItem="uTg-M9-L4c" secondAttribute="leading" constant="10" id="yJD-vw-jvf"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="kfi-aH-bCD"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Q5J-G7-IKv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1800" y="-6"/>
+            <point key="canvasLocation" x="2823" y="21"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="X_ray_Analysis" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleAspectFit" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="beY-hG-OFL">
@@ -118,14 +119,14 @@ You can also review your previously uploaded results.</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2673.913043478261" y="20.758928571428569"/>
+            <point key="canvasLocation" x="3584.057971014493" y="20.758928571428569"/>
         </scene>
         <!--Prev Uploads Table View Controller-->
         <scene sceneID="kpO-eM-B8f">
             <objects>
                 <tableViewController id="qyw-1Z-9hF" customClass="PrevUploadsTableViewController" customModule="X_ray_Analysis" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="wug-OS-w2A">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <prototypes>
@@ -150,14 +151,14 @@ You can also review your previously uploaded results.</string>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XjG-JH-i0S" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3593" y="502"/>
+            <point key="canvasLocation" x="4502.898550724638" y="501.5625"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="cKj-ZA-pUW">
             <objects>
                 <viewController id="Htq-V3-O5j" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="lUL-EQ-iRt">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="xray2" translatesAutoresizingMaskIntoConstraints="NO" id="y2i-Qf-w2i">
@@ -193,14 +194,14 @@ You can also review your previously uploaded results.</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="P1O-dZ-XkN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4493" y="502"/>
+            <point key="canvasLocation" x="5402.898550724638" y="501.5625"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="AHO-Rs-6YJ">
             <objects>
                 <viewController id="0cG-qP-zw0" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="OAO-bL-SAk">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UiX-H5-1Sx">
@@ -235,14 +236,14 @@ You can also review your previously uploaded results.</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LrM-rt-JPa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3592.753623188406" y="-291.29464285714283"/>
+            <point key="canvasLocation" x="4502.898550724638" y="-291.29464285714283"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="2Fx-s0-xd6">
             <objects>
                 <viewController id="eix-60-RLn" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="SIN-QI-Y70">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="xray1" translatesAutoresizingMaskIntoConstraints="NO" id="Gnz-zL-995">
@@ -277,14 +278,14 @@ You can also review your previously uploaded results.</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qiz-3L-5ue" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4391" y="-291"/>
+            <point key="canvasLocation" x="5300" y="-291.29464285714283"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="AmL-RL-7c3">
             <objects>
                 <viewController id="JJ6-2w-qVs" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="pFt-K2-bhy">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="50" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Fh-BU-z6L">
@@ -318,25 +319,25 @@ You can also review your previously uploaded results.</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xn4-WR-1GI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5226" y="-291"/>
+            <point key="canvasLocation" x="6134.7826086956529" y="-291.29464285714283"/>
         </scene>
         <!--Navigation Controller-->
-        <scene sceneID="5lb-R9-syR">
+        <scene sceneID="QcD-Ev-OdI">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="eJS-B7-xLk" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="3BP-VO-MuT" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="cgz-ws-TE2" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="K7c-Ji-he8">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="pPH-2K-frP">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="ESN-56-mW0"/>
+                        <segue destination="TtG-JT-OWK" kind="relationship" relationship="rootViewController" id="pOr-Ye-0TO"/>
                     </connections>
                 </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YSO-Qq-mII" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="799" y="1"/>
+            <point key="canvasLocation" x="1912" y="21"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
