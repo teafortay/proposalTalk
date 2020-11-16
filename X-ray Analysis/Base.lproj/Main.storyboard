@@ -147,7 +147,9 @@ You can also review your previously uploaded results.</string>
                             <constraint firstItem="Gfd-rb-1Bb" firstAttribute="leading" secondItem="om3-Ib-YDo" secondAttribute="leading" constant="30" id="tfz-ae-Na2"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="Vii-h1-FCh"/>
+                    <navigationItem key="navigationItem" id="Vii-h1-FCh">
+                        <barButtonItem key="rightBarButtonItem" title="Home" id="sh9-55-Uhz"/>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="P1O-dZ-XkN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -229,7 +231,9 @@ You can also review your previously uploaded results.</string>
                             <constraint firstItem="Gnz-zL-995" firstAttribute="leading" secondItem="zVp-hT-hyG" secondAttribute="leading" constant="50" id="OwS-XJ-3Dj"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="0uM-2h-P7j"/>
+                    <navigationItem key="navigationItem" id="0uM-2h-P7j">
+                        <barButtonItem key="rightBarButtonItem" title="Cancel" id="XsS-yg-bHs"/>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qiz-3L-5ue" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -268,7 +272,9 @@ You can also review your previously uploaded results.</string>
                             <constraint firstItem="4Fh-BU-z6L" firstAttribute="leading" secondItem="9nT-jJ-CL9" secondAttribute="leading" constant="30" id="iby-w1-6tt"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="YkD-ko-5hT"/>
+                    <navigationItem key="navigationItem" id="YkD-ko-5hT">
+                        <barButtonItem key="rightBarButtonItem" title="Home" id="y5A-ht-vPn"/>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xn4-WR-1GI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
