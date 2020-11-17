@@ -29,7 +29,6 @@
 
 We also store your previous uploads on our encryted cloud server so you can securely view them anytime, anywhere,  from any device, - even in your doctors office!</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mCP-aN-L3P">
@@ -262,7 +261,7 @@ You can also access previes reports below.</string>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UiX-H5-1Sx">
-                                <rect key="frame" x="10" y="579" width="394" height="33"/>
+                                <rect key="frame" x="10" y="629" width="394" height="33"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <state key="normal" title="Select a photo from Camera Roll"/>
                                 <connections>
@@ -270,7 +269,7 @@ You can also access previes reports below.</string>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rk4-yJ-fV4">
-                                <rect key="frame" x="10" y="338" width="394" height="30"/>
+                                <rect key="frame" x="10" y="380" width="394" height="30"/>
                                 <state key="normal" title="Take a picture"/>
                                 <connections>
                                     <segue destination="eix-60-RLn" kind="show" id="oEf-Hi-m3X"/>
@@ -285,6 +284,14 @@ You can also access previes reports below.</string>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="Yf0-TF-gsD">
+                                <rect key="frame" x="70" y="219" width="274" height="32"/>
+                                <segments>
+                                    <segment title="Arm"/>
+                                    <segment title="Chest"/>
+                                    <segment title="Leg"/>
+                                </segments>
+                            </segmentedControl>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="MSM-sn-2Yu"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -292,13 +299,16 @@ You can also access previes reports below.</string>
                             <constraint firstItem="eda-3S-4cH" firstAttribute="top" secondItem="MSM-sn-2Yu" secondAttribute="top" constant="10" id="4O1-Lx-wwM"/>
                             <constraint firstItem="MSM-sn-2Yu" firstAttribute="trailing" secondItem="UiX-H5-1Sx" secondAttribute="trailing" constant="10" id="DsI-6c-yQQ"/>
                             <constraint firstItem="UiX-H5-1Sx" firstAttribute="top" relation="greaterThanOrEqual" secondItem="Rk4-yJ-fV4" secondAttribute="bottom" constant="100" id="H8v-hi-0F9"/>
-                            <constraint firstItem="Rk4-yJ-fV4" firstAttribute="top" secondItem="MSM-sn-2Yu" secondAttribute="top" constant="250" id="Hlt-d7-Lxc"/>
-                            <constraint firstItem="MSM-sn-2Yu" firstAttribute="bottom" secondItem="UiX-H5-1Sx" secondAttribute="bottom" constant="250" id="MH0-gt-Dwc"/>
+                            <constraint firstItem="MSM-sn-2Yu" firstAttribute="bottom" secondItem="UiX-H5-1Sx" secondAttribute="bottom" constant="200" id="MH0-gt-Dwc"/>
                             <constraint firstItem="MSM-sn-2Yu" firstAttribute="trailing" secondItem="Rk4-yJ-fV4" secondAttribute="trailing" constant="10" id="OWk-lr-1cq"/>
                             <constraint firstItem="Rk4-yJ-fV4" firstAttribute="leading" secondItem="MSM-sn-2Yu" secondAttribute="leading" constant="10" id="Q36-pM-hWY"/>
+                            <constraint firstItem="Rk4-yJ-fV4" firstAttribute="top" secondItem="Yf0-TF-gsD" secondAttribute="bottom" constant="130" id="ROW-7c-C89"/>
+                            <constraint firstItem="MSM-sn-2Yu" firstAttribute="trailing" secondItem="Yf0-TF-gsD" secondAttribute="trailing" constant="70" id="bZq-Fo-exP"/>
+                            <constraint firstItem="Yf0-TF-gsD" firstAttribute="leading" secondItem="MSM-sn-2Yu" secondAttribute="leading" constant="70" id="bt3-9A-8Il"/>
                             <constraint firstItem="eda-3S-4cH" firstAttribute="leading" secondItem="MSM-sn-2Yu" secondAttribute="leading" constant="10" id="dpZ-YW-Izg"/>
                             <constraint firstAttribute="trailing" secondItem="eda-3S-4cH" secondAttribute="trailing" constant="10" id="m9I-BC-cad"/>
                             <constraint firstItem="UiX-H5-1Sx" firstAttribute="leading" secondItem="MSM-sn-2Yu" secondAttribute="leading" constant="10" id="vnJ-R3-zwo"/>
+                            <constraint firstItem="Yf0-TF-gsD" firstAttribute="top" secondItem="eda-3S-4cH" secondAttribute="bottom" constant="100" id="wxd-Yq-qnh"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="a40-iE-wtk"/>
