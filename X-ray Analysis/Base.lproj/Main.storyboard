@@ -16,29 +16,39 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z2g-bC-aQw">
-                                <rect key="frame" x="75" y="188" width="264" height="203"/>
-                                <string key="text">Upload your Radiology results below to gett a fast, easy, inexpensige second opinion.
- We use AI to analyze your x-ray a provide a computer generated analysis. 
-You can also review your previously uploaded results.</string>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="15" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z2g-bC-aQw">
+                                <rect key="frame" x="75" y="188" width="264" height="284.5"/>
+                                <mutableString key="text">Create an account to get a fast, easy, inexpensige second opinion of your radiology results. 
+ We use artificial intelligence to analyze your x-ray and provide computer generated analysis.
+
+We also store your previous uploads on our encryted cloud server so you can securely view them anytime, anywhere,  from any device, - even in your doctors office!</mutableString>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mCP-aN-L3P">
-                                <rect key="frame" x="10" y="732" width="394" height="30"/>
+                                <rect key="frame" x="10" y="602.5" width="394" height="30"/>
                                 <state key="normal" title="Sign in"/>
                                 <connections>
                                     <segue destination="BYZ-38-t0r" kind="show" id="XVf-LB-xmT"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S8M-9h-uxR">
-                                <rect key="frame" x="10" y="652" width="394" height="30"/>
+                                <rect key="frame" x="10" y="522.5" width="394" height="30"/>
                                 <state key="normal" title="Create an account"/>
                                 <connections>
                                     <segue destination="BYZ-38-t0r" kind="show" id="NUq-xz-1Lo"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="X-plain My X-ray" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cYR-XI-yWa">
+                                <rect key="frame" x="10" y="98" width="394" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="8iA-gB-IO0"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="uTg-M9-L4c"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -47,12 +57,15 @@ You can also review your previously uploaded results.</string>
                             <constraint firstItem="z2g-bC-aQw" firstAttribute="top" secondItem="uTg-M9-L4c" secondAttribute="top" constant="100" id="2QE-xQ-qhn"/>
                             <constraint firstItem="uTg-M9-L4c" firstAttribute="trailing" secondItem="mCP-aN-L3P" secondAttribute="trailing" constant="10" id="4Ui-La-dIv"/>
                             <constraint firstItem="z2g-bC-aQw" firstAttribute="leading" secondItem="uTg-M9-L4c" secondAttribute="leading" constant="75" id="6Ds-2U-pUg"/>
+                            <constraint firstItem="cYR-XI-yWa" firstAttribute="leading" secondItem="WT9-F9-8yX" secondAttribute="leading" constant="10" id="8LS-il-q6L"/>
+                            <constraint firstItem="cYR-XI-yWa" firstAttribute="top" secondItem="uTg-M9-L4c" secondAttribute="top" constant="10" id="CCC-WC-0N2"/>
                             <constraint firstItem="uTg-M9-L4c" firstAttribute="trailing" secondItem="S8M-9h-uxR" secondAttribute="trailing" constant="10" id="DeR-kv-ChI"/>
+                            <constraint firstItem="uTg-M9-L4c" firstAttribute="trailing" secondItem="cYR-XI-yWa" secondAttribute="trailing" constant="10" id="DfW-1f-TXD"/>
                             <constraint firstItem="mCP-aN-L3P" firstAttribute="leading" secondItem="uTg-M9-L4c" secondAttribute="leading" constant="10" id="Lnv-sw-7mB"/>
                             <constraint firstItem="mCP-aN-L3P" firstAttribute="top" secondItem="S8M-9h-uxR" secondAttribute="bottom" constant="50" id="Ny3-gF-zDc"/>
-                            <constraint firstItem="S8M-9h-uxR" firstAttribute="top" relation="greaterThanOrEqual" secondItem="z2g-bC-aQw" secondAttribute="bottom" constant="50" id="aET-fR-9ek"/>
+                            <constraint firstItem="S8M-9h-uxR" firstAttribute="top" secondItem="z2g-bC-aQw" secondAttribute="bottom" constant="50" id="aET-fR-9ek"/>
                             <constraint firstItem="uTg-M9-L4c" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="z2g-bC-aQw" secondAttribute="bottom" constant="250" id="bWh-tS-QlX"/>
-                            <constraint firstItem="uTg-M9-L4c" firstAttribute="bottom" secondItem="mCP-aN-L3P" secondAttribute="bottom" constant="100" id="dUy-UD-wIh"/>
+                            <constraint firstItem="uTg-M9-L4c" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="mCP-aN-L3P" secondAttribute="bottom" constant="100" id="dUy-UD-wIh"/>
                             <constraint firstItem="S8M-9h-uxR" firstAttribute="leading" secondItem="uTg-M9-L4c" secondAttribute="leading" constant="10" id="yJD-vw-jvf"/>
                         </constraints>
                     </view>
@@ -71,10 +84,10 @@ You can also review your previously uploaded results.</string>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleAspectFit" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="beY-hG-OFL">
-                                <rect key="frame" x="100" y="488" width="214" height="274"/>
+                                <rect key="frame" x="100" y="511.5" width="214" height="250.5"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xYq-sA-82e">
-                                        <rect key="frame" x="0.0" y="0.0" width="214" height="132"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="214" height="120.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <state key="normal" title="upload new x-ray"/>
                                         <connections>
@@ -82,7 +95,7 @@ You can also review your previously uploaded results.</string>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zgp-dn-QbZ">
-                                        <rect key="frame" x="0.0" y="142" width="214" height="132"/>
+                                        <rect key="frame" x="0.0" y="130.5" width="214" height="120"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <state key="normal" title="view previous uploads">
                                             <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="medium"/>
@@ -102,15 +115,27 @@ You can also review your previously uploaded results.</string>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="20" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Uq9-Br-hGP">
+                                <rect key="frame" x="75" y="188" width="264" height="223.5"/>
+                                <string key="text">Upload an x-ray image to get started! Select "upload new x-ray" and follow the prompts to either take a photo or select an image from your photo library. Then, our exclusive AI software will analyze the image and produce a write-up of our findings.
+
+You can also access previes reports below.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="beY-hG-OFL" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="400" id="GA3-BB-Tly"/>
                             <constraint firstItem="wKd-Uu-ViM" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="10" id="MeF-km-rqJ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Uq9-Br-hGP" secondAttribute="trailing" constant="75" id="Sc1-1C-WKK"/>
                             <constraint firstItem="wKd-Uu-ViM" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="Ujw-sX-Ckr"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="wKd-Uu-ViM" secondAttribute="trailing" constant="10" id="Wev-vP-h6G"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="beY-hG-OFL" secondAttribute="bottom" constant="100" id="j6L-Pc-8S0"/>
+                            <constraint firstItem="beY-hG-OFL" firstAttribute="top" secondItem="Uq9-Br-hGP" secondAttribute="bottom" constant="100" id="jiy-ts-9yn"/>
+                            <constraint firstItem="Uq9-Br-hGP" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="75" id="nH0-OF-Y9t"/>
+                            <constraint firstItem="Uq9-Br-hGP" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="100" id="ooY-rj-85b"/>
                             <constraint firstItem="beY-hG-OFL" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="100" id="t2Q-jb-Wxe"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="beY-hG-OFL" secondAttribute="trailing" constant="100" id="vry-Qy-MDw"/>
                         </constraints>
@@ -153,7 +178,7 @@ You can also review your previously uploaded results.</string>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XjG-JH-i0S" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5171.0144927536239" y="373.66071428571428"/>
+            <point key="canvasLocation" x="5423" y="434"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="cKj-ZA-pUW">
@@ -177,17 +202,29 @@ You can also review your previously uploaded results.</string>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="X-plain My X-ray" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fP2-KL-AGq">
+                                <rect key="frame" x="10" y="98" width="394" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="nKx-Qt-SvA"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="om3-Ib-YDo"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="om3-Ib-YDo" firstAttribute="trailing" secondItem="y2i-Qf-w2i" secondAttribute="trailing" constant="50" id="C1S-gN-ROH"/>
+                            <constraint firstItem="fP2-KL-AGq" firstAttribute="top" secondItem="om3-Ib-YDo" secondAttribute="top" constant="10" id="ET0-QP-7EO"/>
                             <constraint firstItem="y2i-Qf-w2i" firstAttribute="top" secondItem="om3-Ib-YDo" secondAttribute="top" constant="50" id="Lzt-Cq-b7B"/>
                             <constraint firstItem="om3-Ib-YDo" firstAttribute="bottom" secondItem="Gfd-rb-1Bb" secondAttribute="bottom" constant="50" id="OOy-qx-DOp"/>
                             <constraint firstItem="om3-Ib-YDo" firstAttribute="trailing" secondItem="Gfd-rb-1Bb" secondAttribute="trailing" constant="30" id="PHs-Gv-2xc"/>
                             <constraint firstItem="y2i-Qf-w2i" firstAttribute="leading" secondItem="om3-Ib-YDo" secondAttribute="leading" constant="50" id="SUh-7F-eIA"/>
                             <constraint firstItem="Gfd-rb-1Bb" firstAttribute="top" secondItem="y2i-Qf-w2i" secondAttribute="bottom" constant="30" id="c9o-nB-8U6"/>
+                            <constraint firstAttribute="trailing" secondItem="fP2-KL-AGq" secondAttribute="trailing" constant="10" id="d1R-c3-JNY"/>
                             <constraint firstItem="Gfd-rb-1Bb" firstAttribute="leading" secondItem="om3-Ib-YDo" secondAttribute="leading" constant="30" id="tfz-ae-Na2"/>
+                            <constraint firstItem="fP2-KL-AGq" firstAttribute="leading" secondItem="om3-Ib-YDo" secondAttribute="leading" constant="10" id="uT9-QP-j8T"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="Vii-h1-FCh">
@@ -196,7 +233,7 @@ You can also review your previously uploaded results.</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="P1O-dZ-XkN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5871.0144927536239" y="373.66071428571428"/>
+            <point key="canvasLocation" x="6223" y="426"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="AHO-Rs-6YJ">
@@ -221,16 +258,28 @@ You can also review your previously uploaded results.</string>
                                     <segue destination="eix-60-RLn" kind="show" id="oEf-Hi-m3X"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="X-plain My X-ray" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eda-3S-4cH">
+                                <rect key="frame" x="10" y="98" width="394" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="13k-zB-Y7a"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="MSM-sn-2Yu"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="eda-3S-4cH" firstAttribute="top" secondItem="MSM-sn-2Yu" secondAttribute="top" constant="10" id="4O1-Lx-wwM"/>
                             <constraint firstItem="MSM-sn-2Yu" firstAttribute="trailing" secondItem="UiX-H5-1Sx" secondAttribute="trailing" constant="10" id="DsI-6c-yQQ"/>
                             <constraint firstItem="UiX-H5-1Sx" firstAttribute="top" relation="greaterThanOrEqual" secondItem="Rk4-yJ-fV4" secondAttribute="bottom" constant="100" id="H8v-hi-0F9"/>
                             <constraint firstItem="Rk4-yJ-fV4" firstAttribute="top" secondItem="MSM-sn-2Yu" secondAttribute="top" constant="250" id="Hlt-d7-Lxc"/>
                             <constraint firstItem="MSM-sn-2Yu" firstAttribute="bottom" secondItem="UiX-H5-1Sx" secondAttribute="bottom" constant="250" id="MH0-gt-Dwc"/>
                             <constraint firstItem="MSM-sn-2Yu" firstAttribute="trailing" secondItem="Rk4-yJ-fV4" secondAttribute="trailing" constant="10" id="OWk-lr-1cq"/>
                             <constraint firstItem="Rk4-yJ-fV4" firstAttribute="leading" secondItem="MSM-sn-2Yu" secondAttribute="leading" constant="10" id="Q36-pM-hWY"/>
+                            <constraint firstItem="eda-3S-4cH" firstAttribute="leading" secondItem="MSM-sn-2Yu" secondAttribute="leading" constant="10" id="dpZ-YW-Izg"/>
+                            <constraint firstAttribute="trailing" secondItem="eda-3S-4cH" secondAttribute="trailing" constant="10" id="m9I-BC-cad"/>
                             <constraint firstItem="UiX-H5-1Sx" firstAttribute="leading" secondItem="MSM-sn-2Yu" secondAttribute="leading" constant="10" id="vnJ-R3-zwo"/>
                         </constraints>
                     </view>
@@ -291,7 +340,7 @@ You can also review your previously uploaded results.</string>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="50" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Fh-BU-z6L">
-                                <rect key="frame" x="30" y="690" width="354" height="122"/>
+                                <rect key="frame" x="30" y="640" width="354" height="122"/>
                                 <string key="text">The lungs are well-expanded and clear, noting chronic elevation of the right hemidiaphragm. no pleural abnormality. Heart size is normal. Cardiomediastinal hilar silhouettes are unremarkable. Median sternotomy wires are midline and intact.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -303,14 +352,26 @@ You can also review your previously uploaded results.</string>
                                     <constraint firstAttribute="height" constant="400" id="91q-eP-8Uq"/>
                                 </constraints>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="X-plain My X-ray" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hmg-zg-AwU">
+                                <rect key="frame" x="10" y="98" width="394" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="DCe-rb-mgb"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="9nT-jJ-CL9"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="9nT-jJ-CL9" firstAttribute="trailing" secondItem="4Fh-BU-z6L" secondAttribute="trailing" constant="30" id="2IA-RB-rYM"/>
                             <constraint firstItem="9nT-jJ-CL9" firstAttribute="trailing" secondItem="KPL-ch-fkO" secondAttribute="trailing" constant="50" id="58d-5P-8AG"/>
+                            <constraint firstItem="Hmg-zg-AwU" firstAttribute="top" secondItem="9nT-jJ-CL9" secondAttribute="top" constant="10" id="DuF-uP-H8n"/>
                             <constraint firstItem="KPL-ch-fkO" firstAttribute="top" secondItem="9nT-jJ-CL9" secondAttribute="top" constant="50" id="GYq-dd-9Y6"/>
-                            <constraint firstItem="9nT-jJ-CL9" firstAttribute="bottom" secondItem="4Fh-BU-z6L" secondAttribute="bottom" constant="50" id="bjt-b4-7sz"/>
+                            <constraint firstItem="9nT-jJ-CL9" firstAttribute="trailing" secondItem="Hmg-zg-AwU" secondAttribute="trailing" constant="10" id="WhB-Y0-8UX"/>
+                            <constraint firstItem="Hmg-zg-AwU" firstAttribute="leading" secondItem="pFt-K2-bhy" secondAttribute="leading" constant="10" id="b1q-7u-vnK"/>
+                            <constraint firstItem="9nT-jJ-CL9" firstAttribute="bottom" secondItem="4Fh-BU-z6L" secondAttribute="bottom" constant="100" id="bjt-b4-7sz"/>
                             <constraint firstItem="KPL-ch-fkO" firstAttribute="leading" secondItem="9nT-jJ-CL9" secondAttribute="leading" constant="50" id="f0A-OA-Vwq"/>
                             <constraint firstItem="4Fh-BU-z6L" firstAttribute="leading" secondItem="9nT-jJ-CL9" secondAttribute="leading" constant="30" id="iby-w1-6tt"/>
                         </constraints>
