@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="TtG-JT-OWK">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="rx1-NI-34W">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
@@ -17,7 +17,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z2g-bC-aQw">
-                                <rect key="frame" x="75" y="144" width="264" height="203"/>
+                                <rect key="frame" x="75" y="188" width="264" height="203"/>
                                 <string key="text">Upload your Radiology results below to gett a fast, easy, inexpensige second opinion.
  We use AI to analyze your x-ray a provide a computer generated analysis. 
 You can also review your previously uploaded results.</string>
@@ -29,14 +29,14 @@ You can also review your previously uploaded results.</string>
                                 <rect key="frame" x="10" y="732" width="394" height="30"/>
                                 <state key="normal" title="Sign in"/>
                                 <connections>
-                                    <segue destination="5PO-p1-zaC" kind="show" id="rcF-cI-Jx3"/>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="XVf-LB-xmT"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S8M-9h-uxR">
                                 <rect key="frame" x="10" y="652" width="394" height="30"/>
                                 <state key="normal" title="Create an account"/>
                                 <connections>
-                                    <segue destination="5PO-p1-zaC" kind="show" id="pcv-b6-M2n"/>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="NUq-xz-1Lo"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -60,21 +60,21 @@ You can also review your previously uploaded results.</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Q5J-G7-IKv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2639" y="-279"/>
+            <point key="canvasLocation" x="4384" y="-267"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="X_ray_Analysis" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleAspectFit" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="beY-hG-OFL">
-                                <rect key="frame" x="100" y="456" width="214" height="252"/>
+                                <rect key="frame" x="100" y="488" width="214" height="274"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xYq-sA-82e">
-                                        <rect key="frame" x="0.0" y="0.0" width="214" height="121"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="214" height="132"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <state key="normal" title="upload new x-ray"/>
                                         <connections>
@@ -82,7 +82,7 @@ You can also review your previously uploaded results.</string>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zgp-dn-QbZ">
-                                        <rect key="frame" x="0.0" y="131" width="214" height="121"/>
+                                        <rect key="frame" x="0.0" y="142" width="214" height="132"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <state key="normal" title="view previous uploads">
                                             <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="medium"/>
@@ -94,7 +94,7 @@ You can also review your previously uploaded results.</string>
                                 </subviews>
                             </stackView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="X-plain My X-ray" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wKd-Uu-ViM">
-                                <rect key="frame" x="10" y="66" width="394" height="21"/>
+                                <rect key="frame" x="10" y="98" width="394" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="21" id="3Ff-4j-X7S"/>
                                 </constraints>
@@ -121,14 +121,14 @@ You can also review your previously uploaded results.</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4378.2608695652179" y="-267.1875"/>
+            <point key="canvasLocation" x="5191" y="-267"/>
         </scene>
         <!--Prev Uploads Table View Controller-->
         <scene sceneID="kpO-eM-B8f">
             <objects>
                 <tableViewController id="qyw-1Z-9hF" customClass="PrevUploadsTableViewController" customModule="X_ray_Analysis" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="wug-OS-w2A">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <prototypes>
@@ -160,18 +160,18 @@ You can also review your previously uploaded results.</string>
             <objects>
                 <viewController id="Htq-V3-O5j" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="lUL-EQ-iRt">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="xray2" translatesAutoresizingMaskIntoConstraints="NO" id="y2i-Qf-w2i">
-                                <rect key="frame" x="50" y="106" width="314" height="400"/>
+                                <rect key="frame" x="50" y="138" width="314" height="400"/>
                                 <constraints>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="400" id="Bcf-Ou-DI9"/>
                                     <constraint firstAttribute="height" constant="400" id="K5H-ud-ciQ"/>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="50" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gfd-rb-1Bb">
-                                <rect key="frame" x="30" y="536" width="354" height="222"/>
+                                <rect key="frame" x="30" y="568" width="354" height="244"/>
                                 <string key="text">These findings are suspicious for aspiration pneumonia given the clinical history. Left lung is relatively clear. there is a right ij central venous line with distal lead tip in the distal svc. cardiac silhouette is within normal limits.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -203,11 +203,11 @@ You can also review your previously uploaded results.</string>
             <objects>
                 <viewController id="0cG-qP-zw0" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="OAO-bL-SAk">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UiX-H5-1Sx">
-                                <rect key="frame" x="10" y="525" width="394" height="33"/>
+                                <rect key="frame" x="10" y="579" width="394" height="33"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <state key="normal" title="Select a photo from Camera Roll"/>
                                 <connections>
@@ -215,7 +215,7 @@ You can also review your previously uploaded results.</string>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rk4-yJ-fV4">
-                                <rect key="frame" x="10" y="306" width="394" height="30"/>
+                                <rect key="frame" x="10" y="338" width="394" height="30"/>
                                 <state key="normal" title="Take a picture"/>
                                 <connections>
                                     <segue destination="eix-60-RLn" kind="show" id="oEf-Hi-m3X"/>
@@ -238,24 +238,24 @@ You can also review your previously uploaded results.</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LrM-rt-JPa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5071.0144927536239" y="-291.29464285714283"/>
+            <point key="canvasLocation" x="5981.1594202898559" y="-291.29464285714283"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="2Fx-s0-xd6">
             <objects>
                 <viewController id="eix-60-RLn" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="SIN-QI-Y70">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="xray1" translatesAutoresizingMaskIntoConstraints="NO" id="Gnz-zL-995">
-                                <rect key="frame" x="50" y="106" width="314" height="400"/>
+                                <rect key="frame" x="50" y="138" width="314" height="400"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="400" id="KYB-uF-9bf"/>
                                 </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Cs-QN-fuy">
-                                <rect key="frame" x="10" y="616" width="394" height="30"/>
+                                <rect key="frame" x="10" y="648" width="394" height="30"/>
                                 <state key="normal" title="Analyze"/>
                                 <connections>
                                     <segue destination="JJ6-2w-qVs" kind="show" id="aMA-CT-zxK"/>
@@ -280,25 +280,25 @@ You can also review your previously uploaded results.</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qiz-3L-5ue" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5834.7826086956529" y="-291.29464285714283"/>
+            <point key="canvasLocation" x="6744.9275362318849" y="-291.29464285714283"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="AmL-RL-7c3">
             <objects>
                 <viewController id="JJ6-2w-qVs" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="pFt-K2-bhy">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="50" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Fh-BU-z6L">
-                                <rect key="frame" x="30" y="636" width="354" height="122"/>
+                                <rect key="frame" x="30" y="690" width="354" height="122"/>
                                 <string key="text">The lungs are well-expanded and clear, noting chronic elevation of the right hemidiaphragm. no pleural abnormality. Heart size is normal. Cardiomediastinal hilar silhouettes are unremarkable. Median sternotomy wires are midline and intact.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="xray1" translatesAutoresizingMaskIntoConstraints="NO" id="KPL-ch-fkO">
-                                <rect key="frame" x="50" y="106" width="314" height="400"/>
+                                <rect key="frame" x="50" y="138" width="314" height="400"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="400" id="91q-eP-8Uq"/>
                                 </constraints>
@@ -321,31 +321,30 @@ You can also review your previously uploaded results.</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xn4-WR-1GI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="6597.1014492753629" y="-291.29464285714283"/>
+            <point key="canvasLocation" x="7507.2463768115949" y="-291.29464285714283"/>
         </scene>
         <!--Navigation Controller-->
-        <scene sceneID="g2O-V1-Hyw">
+        <scene sceneID="jdQ-Lu-i7w">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="5PO-p1-zaC" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="rx1-NI-34W" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationItem key="navigationItem" id="pCc-xs-Gfp"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="9pW-SD-6aX">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="56"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="tAW-zg-guE">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="LFP-Ti-ZUy"/>
+                        <segue destination="TtG-JT-OWK" kind="relationship" relationship="rootViewController" id="QNa-Vg-03A"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="KAm-BF-Z9s" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mg9-Mw-IBg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3466.666666666667" y="-267.1875"/>
+            <point key="canvasLocation" x="3567" y="-267"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="rcF-cI-Jx3"/>
         <segue reference="WdW-mY-aB2"/>
+        <segue reference="NUq-xz-1Lo"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="xray1" width="253.5" height="252"/>
