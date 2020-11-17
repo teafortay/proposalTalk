@@ -16,14 +16,20 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.65000000000000002" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="X-ray3" translatesAutoresizingMaskIntoConstraints="NO" id="FX0-aX-Kg3">
+                                <rect key="frame" x="50" y="169" width="314" height="325"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="325" id="Gsx-vh-Lkv"/>
+                                </constraints>
+                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="15" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z2g-bC-aQw">
                                 <rect key="frame" x="75" y="188" width="264" height="284.5"/>
-                                <mutableString key="text">Create an account to get a fast, easy, inexpensige second opinion of your radiology results. 
+                                <string key="text">Create an account to get a fast, easy, inexpensige second opinion of your radiology results. 
  We use artificial intelligence to analyze your x-ray and provide computer generated analysis.
 
-We also store your previous uploads on our encryted cloud server so you can securely view them anytime, anywhere,  from any device, - even in your doctors office!</mutableString>
+We also store your previous uploads on our encryted cloud server so you can securely view them anytime, anywhere,  from any device, - even in your doctors office!</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mCP-aN-L3P">
@@ -56,6 +62,7 @@ We also store your previous uploads on our encryted cloud server so you can secu
                             <constraint firstItem="uTg-M9-L4c" firstAttribute="trailing" secondItem="z2g-bC-aQw" secondAttribute="trailing" constant="75" id="1bP-I9-CuH"/>
                             <constraint firstItem="z2g-bC-aQw" firstAttribute="top" secondItem="uTg-M9-L4c" secondAttribute="top" constant="100" id="2QE-xQ-qhn"/>
                             <constraint firstItem="uTg-M9-L4c" firstAttribute="trailing" secondItem="mCP-aN-L3P" secondAttribute="trailing" constant="10" id="4Ui-La-dIv"/>
+                            <constraint firstItem="FX0-aX-Kg3" firstAttribute="leading" secondItem="uTg-M9-L4c" secondAttribute="leading" constant="50" id="5vA-oW-E9r"/>
                             <constraint firstItem="z2g-bC-aQw" firstAttribute="leading" secondItem="uTg-M9-L4c" secondAttribute="leading" constant="75" id="6Ds-2U-pUg"/>
                             <constraint firstItem="cYR-XI-yWa" firstAttribute="leading" secondItem="WT9-F9-8yX" secondAttribute="leading" constant="10" id="8LS-il-q6L"/>
                             <constraint firstItem="cYR-XI-yWa" firstAttribute="top" secondItem="uTg-M9-L4c" secondAttribute="top" constant="10" id="CCC-WC-0N2"/>
@@ -65,7 +72,9 @@ We also store your previous uploads on our encryted cloud server so you can secu
                             <constraint firstItem="mCP-aN-L3P" firstAttribute="top" secondItem="S8M-9h-uxR" secondAttribute="bottom" constant="50" id="Ny3-gF-zDc"/>
                             <constraint firstItem="S8M-9h-uxR" firstAttribute="top" secondItem="z2g-bC-aQw" secondAttribute="bottom" constant="50" id="aET-fR-9ek"/>
                             <constraint firstItem="uTg-M9-L4c" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="z2g-bC-aQw" secondAttribute="bottom" constant="250" id="bWh-tS-QlX"/>
+                            <constraint firstItem="FX0-aX-Kg3" firstAttribute="top" secondItem="cYR-XI-yWa" secondAttribute="bottom" constant="50" id="dIr-Bs-4Jq"/>
                             <constraint firstItem="uTg-M9-L4c" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="mCP-aN-L3P" secondAttribute="bottom" constant="100" id="dUy-UD-wIh"/>
+                            <constraint firstItem="uTg-M9-L4c" firstAttribute="trailing" secondItem="FX0-aX-Kg3" secondAttribute="trailing" constant="50" id="oxM-6d-swx"/>
                             <constraint firstItem="S8M-9h-uxR" firstAttribute="leading" secondItem="uTg-M9-L4c" secondAttribute="leading" constant="10" id="yJD-vw-jvf"/>
                         </constraints>
                     </view>
@@ -75,14 +84,20 @@ We also store your previous uploads on our encryted cloud server so you can secu
             </objects>
             <point key="canvasLocation" x="4384" y="-267"/>
         </scene>
-        <!--View Controller-->
+        <!--X-plain My X-ray-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="X_ray_Analysis" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="X-plain My X-ray" id="BYZ-38-t0r" customClass="ViewController" customModule="X_ray_Analysis" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.65000000000000002" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="X-ray3" translatesAutoresizingMaskIntoConstraints="NO" id="6pM-wp-q0p">
+                                <rect key="frame" x="50" y="138" width="314" height="325"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="325" id="B25-TX-RDv"/>
+                                </constraints>
+                            </imageView>
                             <stackView opaque="NO" contentMode="scaleAspectFit" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="beY-hG-OFL">
                                 <rect key="frame" x="100" y="511.5" width="214" height="250.5"/>
                                 <subviews>
@@ -128,10 +143,13 @@ You can also access previes reports below.</string>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="6pM-wp-q0p" secondAttribute="trailing" constant="50" id="EZi-Mw-nRO"/>
+                            <constraint firstItem="6pM-wp-q0p" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="IeT-sf-cN5"/>
                             <constraint firstItem="wKd-Uu-ViM" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="10" id="MeF-km-rqJ"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Uq9-Br-hGP" secondAttribute="trailing" constant="75" id="Sc1-1C-WKK"/>
                             <constraint firstItem="wKd-Uu-ViM" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="Ujw-sX-Ckr"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="wKd-Uu-ViM" secondAttribute="trailing" constant="10" id="Wev-vP-h6G"/>
+                            <constraint firstItem="6pM-wp-q0p" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="50" id="YQR-1N-nnQ"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="beY-hG-OFL" secondAttribute="bottom" constant="100" id="j6L-Pc-8S0"/>
                             <constraint firstItem="beY-hG-OFL" firstAttribute="top" secondItem="Uq9-Br-hGP" secondAttribute="bottom" constant="100" id="jiy-ts-9yn"/>
                             <constraint firstItem="Uq9-Br-hGP" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="75" id="nH0-OF-Y9t"/>
@@ -408,6 +426,7 @@ You can also access previes reports below.</string>
         <segue reference="NUq-xz-1Lo"/>
     </inferredMetricsTieBreakers>
     <resources>
+        <image name="X-ray3" width="964.5" height="964.5"/>
         <image name="xray1" width="253.5" height="252"/>
         <image name="xray2" width="253.5" height="252"/>
         <systemColor name="systemBackgroundColor">
