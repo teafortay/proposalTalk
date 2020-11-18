@@ -37,7 +37,7 @@ class PrevUploadsTableViewController: UITableViewController {
 
         // Configure the cell...
         if indexPath.row == 0 {
-            cell.textLabel?.text = "Results uploaded at 8:36 today"
+            cell.textLabel?.text = "Results uploaded at 3:28 pm today"
         }
         if indexPath.row == 1 {
             cell.textLabel?.text = "Results uploaded Oct. 29, 2020"
