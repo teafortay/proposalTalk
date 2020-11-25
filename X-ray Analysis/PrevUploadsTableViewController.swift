@@ -28,7 +28,7 @@ class PrevUploadsTableViewController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 2
+        return 5
     }
 
     
@@ -37,14 +37,38 @@ class PrevUploadsTableViewController: UITableViewController {
 
         // Configure the cell...
         if indexPath.row == 0 {
-            cell.textLabel?.text = "Results uploaded at 3:28 pm today"
+            cell.textLabel?.text = "Results uploaded at 12:13 pm today"
         }
         if indexPath.row == 1 {
-            cell.textLabel?.text = "Results uploaded Oct. 29, 2020"
+            cell.textLabel?.text = "Results uploaded Nov. 29, 2020 at 1:53 pm"
+        }
+        if indexPath.row == 2 {
+                cell.textLabel?.text = "Results uploaded Nov. 29, 2020 at 11:46 am"
+        }
+        if indexPath.row == 3 {
+                cell.textLabel?.text = "Results uploaded Nov. 16, 2020"
+        }
+        if indexPath.row == 4 {
+                cell.textLabel?.text = "Results uploaded Oct. 29, 2020"
         }
 //        cell.textLabel?.text = "Cell "+String(indexPath.row)
         return cell
     }
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+            if (indexPath.row / 2) * 2 == indexPath.row {
+//                debugPrint("is even")
+                if let evenXRayViewController = self.storyboard?.instantiateViewController(withIdentifier: "vc2") as UIViewController? {
+                    self.navigationController?.pushViewController(evenXRayViewController, animated: true)
+                }
+                  //self.present(planXRayViewController, animated: true, completion: nil)
+            } else {
+//                debugPrint("is odd")
+                if let oddXRayViewController = self.storyboard?.instantiateViewController(withIdentifier: "vc1") as UIViewController? {
+                    self.navigationController?.pushViewController(oddXRayViewController, animated: true)
+                }
+            }
+        }
     
 
     /*
