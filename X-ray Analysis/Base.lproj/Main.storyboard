@@ -192,13 +192,7 @@ You can also access previes reports below.</string>
                             <outlet property="delegate" destination="qyw-1Z-9hF" id="C8L-zb-umd"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="BaY-Wy-Nkx">
-                        <barButtonItem key="rightBarButtonItem" title="Item" id="UA9-DE-MGK">
-                            <connections>
-                                <segue destination="Htq-V3-O5j" kind="show" id="tcO-an-OSL"/>
-                            </connections>
-                        </barButtonItem>
-                    </navigationItem>
+                    <navigationItem key="navigationItem" id="BaY-Wy-Nkx"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XjG-JH-i0S" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -213,21 +207,21 @@ You can also access previes reports below.</string>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="xray2" translatesAutoresizingMaskIntoConstraints="NO" id="y2i-Qf-w2i">
-                                <rect key="frame" x="50" y="138" width="314" height="400"/>
+                                <rect key="frame" x="50" y="94" width="314" height="400"/>
                                 <constraints>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="400" id="Bcf-Ou-DI9"/>
                                     <constraint firstAttribute="height" constant="400" id="K5H-ud-ciQ"/>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="50" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gfd-rb-1Bb">
-                                <rect key="frame" x="30" y="568" width="354" height="244"/>
+                                <rect key="frame" x="30" y="524" width="354" height="288"/>
                                 <string key="text">These findings are suspicious for aspiration pneumonia given the clinical history. Left lung is relatively clear. there is a right ij central venous line with distal lead tip in the distal svc. cardiac silhouette is within normal limits.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="X-plain My X-ray" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fP2-KL-AGq">
-                                <rect key="frame" x="10" y="98" width="394" height="21"/>
+                                <rect key="frame" x="10" y="54" width="394" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="21" id="nKx-Qt-SvA"/>
                                 </constraints>
@@ -235,14 +229,6 @@ You can also access previes reports below.</string>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e8A-GN-kuL">
-                                <rect key="frame" x="158" y="820" width="46" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <connections>
-                                    <segue destination="u2h-1o-Fc3" kind="show" id="1Ia-Px-dV8"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="om3-Ib-YDo"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -473,13 +459,13 @@ You can also access previes reports below.</string>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="xray1" translatesAutoresizingMaskIntoConstraints="NO" id="SbW-n2-AXf">
-                                <rect key="frame" x="50" y="138" width="314" height="400"/>
+                                <rect key="frame" x="50" y="94" width="314" height="400"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="400" id="1Yf-dw-KnJ"/>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="X-plain My X-ray" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6EP-za-pKO">
-                                <rect key="frame" x="10" y="98" width="394" height="21"/>
+                                <rect key="frame" x="10" y="54" width="394" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="21" id="8Bq-mM-If2"/>
                                 </constraints>
