@@ -13,16 +13,39 @@ class NewViewController: UIViewController {
         self.navigationController?.popToRootViewController(animated: true)
     }
     
+    
+    @IBAction func cancel(_ sender: Any) {
+        if let homePageViewController = self.storyboard?.instantiateViewController(withIdentifier: "Homepage") as UIViewController? {
+            self.navigationController?.pushViewController(homePageViewController, animated: true)
+            self.navigationController?.popToViewController(homePageViewController, animated: true)
+        }
+    }
+    
+    
     @IBAction func home1(_ sender: Any) {
         if let homePageViewController = self.storyboard?.instantiateViewController(withIdentifier: "Homepage") as UIViewController? {
             self.navigationController?.pushViewController(homePageViewController, animated: true)
             self.navigationController?.popToViewController(homePageViewController, animated: true)
         }
-
-        
     }
     
-
+    
+    @IBAction func home2(_ sender: Any) {
+        if let homePageViewController = self.storyboard?.instantiateViewController(withIdentifier: "Homepage") as UIViewController? {
+            self.navigationController?.pushViewController(homePageViewController, animated: true)
+            self.navigationController?.popToViewController(homePageViewController, animated: true)
+        }
+    }
+    
+    
+    @IBAction func home3(_ sender: Any) {
+        if let homePageViewController = self.storyboard?.instantiateViewController(withIdentifier: "Homepage") as UIViewController? {
+            self.navigationController?.pushViewController(homePageViewController, animated: true)
+            self.navigationController?.popToViewController(homePageViewController, animated: true)
+        }
+    }
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 

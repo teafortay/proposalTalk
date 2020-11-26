@@ -192,36 +192,42 @@ You can also access previes reports below.</string>
                             <outlet property="delegate" destination="qyw-1Z-9hF" id="C8L-zb-umd"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="BaY-Wy-Nkx"/>
+                    <navigationItem key="navigationItem" id="BaY-Wy-Nkx">
+                        <barButtonItem key="rightBarButtonItem" title="Item" id="UA9-DE-MGK">
+                            <connections>
+                                <segue destination="Htq-V3-O5j" kind="show" id="tcO-an-OSL"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XjG-JH-i0S" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="5423" y="434"/>
         </scene>
-        <!--View Controller-->
+        <!--New View Controller-->
         <scene sceneID="cKj-ZA-pUW">
             <objects>
-                <viewController storyboardIdentifier="vc1" id="Htq-V3-O5j" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="vc1" id="Htq-V3-O5j" customClass="NewViewController" customModule="X_ray_Analysis" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="lUL-EQ-iRt">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="xray2" translatesAutoresizingMaskIntoConstraints="NO" id="y2i-Qf-w2i">
-                                <rect key="frame" x="50" y="94" width="314" height="400"/>
+                                <rect key="frame" x="50" y="138" width="314" height="400"/>
                                 <constraints>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="400" id="Bcf-Ou-DI9"/>
                                     <constraint firstAttribute="height" constant="400" id="K5H-ud-ciQ"/>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="50" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gfd-rb-1Bb">
-                                <rect key="frame" x="30" y="524" width="354" height="288"/>
+                                <rect key="frame" x="30" y="568" width="354" height="244"/>
                                 <string key="text">These findings are suspicious for aspiration pneumonia given the clinical history. Left lung is relatively clear. there is a right ij central venous line with distal lead tip in the distal svc. cardiac silhouette is within normal limits.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="X-plain My X-ray" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fP2-KL-AGq">
-                                <rect key="frame" x="10" y="54" width="394" height="21"/>
+                                <rect key="frame" x="10" y="98" width="394" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="21" id="nKx-Qt-SvA"/>
                                 </constraints>
@@ -229,6 +235,14 @@ You can also access previes reports below.</string>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e8A-GN-kuL">
+                                <rect key="frame" x="158" y="820" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <segue destination="u2h-1o-Fc3" kind="show" id="1Ia-Px-dV8"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="om3-Ib-YDo"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -246,7 +260,11 @@ You can also access previes reports below.</string>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="Vii-h1-FCh">
-                        <barButtonItem key="rightBarButtonItem" title="Home" id="sh9-55-Uhz"/>
+                        <barButtonItem key="rightBarButtonItem" title="Home" id="sh9-55-Uhz">
+                            <connections>
+                                <action selector="home2:" destination="Htq-V3-O5j" id="m41-Tc-VMC"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="P1O-dZ-XkN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -318,10 +336,10 @@ You can also access previes reports below.</string>
             </objects>
             <point key="canvasLocation" x="5981.1594202898559" y="-291.29464285714283"/>
         </scene>
-        <!--View Controller-->
+        <!--New View Controller-->
         <scene sceneID="2Fx-s0-xd6">
             <objects>
-                <viewController id="eix-60-RLn" sceneMemberID="viewController">
+                <viewController id="eix-60-RLn" customClass="NewViewController" customModule="X_ray_Analysis" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="SIN-QI-Y70">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -353,7 +371,11 @@ You can also access previes reports below.</string>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="0uM-2h-P7j">
-                        <barButtonItem key="rightBarButtonItem" title="Cancel" id="XsS-yg-bHs"/>
+                        <barButtonItem key="rightBarButtonItem" title="Cancel" id="XsS-yg-bHs">
+                            <connections>
+                                <action selector="cancel:" destination="eix-60-RLn" id="AaQ-hU-I6g"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qiz-3L-5ue" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -435,10 +457,10 @@ You can also access previes reports below.</string>
             </objects>
             <point key="canvasLocation" x="3567" y="-267"/>
         </scene>
-        <!--View Controller-->
+        <!--New View Controller-->
         <scene sceneID="Z9M-VK-Ai7">
             <objects>
-                <viewController storyboardIdentifier="vc2" id="u2h-1o-Fc3" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="vc2" id="u2h-1o-Fc3" customClass="NewViewController" customModule="X_ray_Analysis" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="d3k-bS-JDV">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -451,13 +473,13 @@ You can also access previes reports below.</string>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="xray1" translatesAutoresizingMaskIntoConstraints="NO" id="SbW-n2-AXf">
-                                <rect key="frame" x="50" y="94" width="314" height="400"/>
+                                <rect key="frame" x="50" y="138" width="314" height="400"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="400" id="1Yf-dw-KnJ"/>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="X-plain My X-ray" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6EP-za-pKO">
-                                <rect key="frame" x="10" y="54" width="394" height="21"/>
+                                <rect key="frame" x="10" y="98" width="394" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="21" id="8Bq-mM-If2"/>
                                 </constraints>
@@ -481,7 +503,11 @@ You can also access previes reports below.</string>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="aqy-Tv-4Gl">
-                        <barButtonItem key="rightBarButtonItem" title="Home" id="0eT-2B-cOb"/>
+                        <barButtonItem key="rightBarButtonItem" title="Home" id="0eT-2B-cOb">
+                            <connections>
+                                <action selector="home3:" destination="u2h-1o-Fc3" id="CUs-8G-nXB"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ibl-BG-XEA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
