@@ -14,9 +14,12 @@ class NewViewController: UIViewController {
     }
     
     @IBAction func home1(_ sender: Any) {
-        self.dismiss(animated: true, completion: nil)
-        let navigationController = UINavigationController(rootViewController: UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "Hompage") )
-        self.present(navigationController, animated: true, completion: nil)
+        if let homePageViewController = self.storyboard?.instantiateViewController(withIdentifier: "Homepage") as UIViewController? {
+            self.navigationController?.pushViewController(homePageViewController, animated: true)
+            self.navigationController?.popToViewController(homePageViewController, animated: true)
+        }
+
+        
     }
     
 
