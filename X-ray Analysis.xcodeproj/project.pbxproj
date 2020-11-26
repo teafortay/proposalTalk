@@ -16,6 +16,7 @@
 		4A9145952558FDD1005FEDD4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4A9145932558FDD1005FEDD4 /* LaunchScreen.storyboard */; };
 		4A9145A02558FDD1005FEDD4 /* X_ray_AnalysisTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A91459F2558FDD1005FEDD4 /* X_ray_AnalysisTests.swift */; };
 		4A9145AB2558FDD1005FEDD4 /* X_ray_AnalysisUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A9145AA2558FDD1005FEDD4 /* X_ray_AnalysisUITests.swift */; };
+		4A91E62E256F3F1300AD5F72 /* NewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A91E62D256F3F1300AD5F72 /* NewViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		4A9145A62558FDD1005FEDD4 /* X-ray AnalysisUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "X-ray AnalysisUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4A9145AA2558FDD1005FEDD4 /* X_ray_AnalysisUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = X_ray_AnalysisUITests.swift; sourceTree = "<group>"; };
 		4A9145AC2558FDD1005FEDD4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4A91E62D256F3F1300AD5F72 /* NewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +109,7 @@
 				4A91458E2558FDD0005FEDD4 /* Main.storyboard */,
 				4A9145912558FDD1005FEDD4 /* Assets.xcassets */,
 				4A9145932558FDD1005FEDD4 /* LaunchScreen.storyboard */,
+				4A91E62D256F3F1300AD5F72 /* NewViewController.swift */,
 				4A40F281255E349E00EB5344 /* PrevUploadsTableViewController.swift */,
 				4A9145962558FDD1005FEDD4 /* Info.plist */,
 			);
@@ -263,6 +266,7 @@
 			files = (
 				4A91458D2558FDD0005FEDD4 /* ViewController.swift in Sources */,
 				4A9145892558FDD0005FEDD4 /* AppDelegate.swift in Sources */,
+				4A91E62E256F3F1300AD5F72 /* NewViewController.swift in Sources */,
 				4A91458B2558FDD0005FEDD4 /* SceneDelegate.swift in Sources */,
 				4A40F282255E349E00EB5344 /* PrevUploadsTableViewController.swift in Sources */,
 			);

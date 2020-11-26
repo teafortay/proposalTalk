@@ -86,7 +86,7 @@ We also store your previous uploads on our encryted cloud server so you can secu
         <!--Home-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController title="Home" id="BYZ-38-t0r" customClass="ViewController" customModule="X_ray_Analysis" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Home" id="BYZ-38-t0r" customClass="NewViewController" customModule="X_ray_Analysis" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -158,7 +158,11 @@ You can also access previes reports below.</string>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="j91-4z-qma">
-                        <barButtonItem key="leftBarButtonItem" title="Sign Out" id="IZg-tc-5kG"/>
+                        <barButtonItem key="leftBarButtonItem" title="Sign Out" id="IZg-tc-5kG">
+                            <connections>
+                                <action selector="signOut:" destination="BYZ-38-t0r" id="zRY-89-Urv"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -356,10 +360,10 @@ You can also access previes reports below.</string>
             </objects>
             <point key="canvasLocation" x="6744.9275362318849" y="-291.29464285714283"/>
         </scene>
-        <!--View Controller-->
+        <!--New View Controller-->
         <scene sceneID="AmL-RL-7c3">
             <objects>
-                <viewController id="JJ6-2w-qVs" sceneMemberID="viewController">
+                <viewController id="JJ6-2w-qVs" customClass="NewViewController" customModule="X_ray_Analysis" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="pFt-K2-bhy">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -402,7 +406,11 @@ You can also access previes reports below.</string>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="YkD-ko-5hT">
-                        <barButtonItem key="rightBarButtonItem" title="Home" id="y5A-ht-vPn"/>
+                        <barButtonItem key="rightBarButtonItem" title="Home" id="y5A-ht-vPn">
+                            <connections>
+                                <action selector="home1:" destination="JJ6-2w-qVs" id="12K-JF-4Yd"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xn4-WR-1GI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
